@@ -1,0 +1,23 @@
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+    background-color: darkslategray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.navbar-header{
+    width:400px;
+    margin-left:75px !important;
+}
+
+.sigline{
+    color: #cc5500;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+.navbar-header .navbar-toggle .collapsed {
+  float: right;
+}
