@@ -50,7 +50,50 @@
             </div>
 
         </div>
-
+      
+        <div class="container">
+          <div class="row row-grid">
+              <div class="col-md-8">
+                  <div class="box box-left">
+                      <section id="intro">
+                          <h1>Summary</h1>
+                          <hr>
+                          <figure>
+                              <a target="_blank" href="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Weather.png">
+                                  <img id="viz-main" src="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Weather.png" alt="Latitude of cities">
+                              </a>
+                          </figure>
+  
+                          <section id="summary">
+                              <p>This project utilizes Python, API’s, and JSON traversals to try and answer a fundamental question:
+                                  “What’s the weather like as we get closer to the equator?”
+                              </p>
+  
+                              <p> Assigning 1,500 random Latitude and Longitudes, I utilized the Python CitiPy library to find
+                                  the city closest to the Lat/Lon (dropping all duplicates) to get a listing of over 600 cities.
+                                  I utilized OpenWeatherMapAPI to get the weather for the cities (dropping cities with no data)
+                                  to create a dataframe of weather information for over 500 cities.
+                              </p>
+  
+                              <p>
+                                  The dataframe is saved to CSV and the data is analyzed across the three climate zones (Tropical Zone, Temperate Zone, and
+                                  Polar Zone). To showcase the relationship between latitude and temperature/humidity/cloudiness/wind
+                                  speed I utilize MatplotLib scatter plots to view:
+                              </p>
+  
+                              <ul>
+                                  <li>Temperature (F) vs. Latitude</li>
+                                  <li>Humidity (%) vs. Latitude</li>
+                                  <li>Cloudiness (%) vs. Latitude</li>
+                                  <li>Wind Speed (mph) vs. Latitude</li>
+  
+                              </ul>
+  
+                          </section>
+  
+                      </section>
+                  </div>
+              </div>
 
 
 
