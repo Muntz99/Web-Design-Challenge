@@ -51,50 +51,86 @@
 
         </div>
       
-        <div class="container">
-          <div class="row row-grid">
-              <div class="col-md-8">
-                  <div class="box box-left">
-                      <section id="intro">
-                          <h1>Summary</h1>
-                          <hr>
-                          <figure>
-                              <a target="_blank" href="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Weather.png">
-                                  <img id="viz-main" src="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Weather.png" alt="Latitude of cities">
-                              </a>
-                          </figure>
+  <div class="container">
+    <div class="row row-grid">
+        <div class="col-md-8">
+            <div class="box box-left">
+                <section id="intro">
+                    <h1>Summary</h1>
+                    <hr>
+                    <figure>
+                          <a target="_blank" href="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Temp.png">
+                            <img id="viz-main" src="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Temp.png" alt="Latitude of cities">
+                          </a>
+                    </figure>
   
-                          <section id="summary">
-                              <p>This project utilizes Python, API’s, and JSON traversals to try and answer a fundamental question:
+                    <section id="summary">
+                        <p>This project utilizes Python, API’s, and JSON traversals to try and answer a fundamental question:
                                   “What’s the weather like as we get closer to the equator?”
-                              </p>
+                        </p>
   
-                              <p> Assigning 1,500 random Latitude and Longitudes, I utilized the Python CitiPy library to find
-                                  the city closest to the Lat/Lon (dropping all duplicates) to get a listing of over 600 cities.
-                                  I utilized OpenWeatherMapAPI to get the weather for the cities (dropping cities with no data)
-                                  to create a dataframe of weather information for over 500 cities.
-                              </p>
+                        <p> Assigning 1,500 random Latitude and Longitudes, I utilized the Python CitiPy library to find
+                            the city closest to the Lat/Lon (dropping all duplicates) to get a listing of over 600 cities.
+                            I utilized OpenWeatherMapAPI to get the weather for the cities (dropping cities with no data)
+                            to create a dataframe of weather information for over 500 cities.
+                        </p>
   
-                              <p>
-                                  The dataframe is saved to CSV and the data is analyzed across the three climate zones (Tropical Zone, Temperate Zone, and
-                                  Polar Zone). To showcase the relationship between latitude and temperature/humidity/cloudiness/wind
-                                  speed I utilize MatplotLib scatter plots to view:
-                              </p>
+                        <p>
+                            The dataframe is saved to CSV and the data is analyzed. To showcase the relationship between latitude and Temperature, Humidity, Cloudiness, and Wind
+                            speed I utilized MatplotLib scatter plots to view:
+                        </p>
   
-                              <ul>
-                                  <li>Temperature (F) vs. Latitude</li>
-                                  <li>Humidity (%) vs. Latitude</li>
-                                  <li>Cloudiness (%) vs. Latitude</li>
-                                  <li>Wind Speed (mph) vs. Latitude</li>
+                        <ul>
+                            <li>Temperature (F) vs. Latitude</li>
+                            <li>Humidity (%) vs. Latitude</li>
+                            <li>Cloudiness (%) vs. Latitude</li>
+                            <li>Wind Speed (mph) vs. Latitude</li>
   
-                              </ul>
-  
-                          </section>
-  
+                        </ul>
                       </section>
-                  </div>
-              </div>
+                  </section>
+            </div>
+      </div>
+      <div class="col-md-4">
+        <div class="box box-right">
+            <h2>Visualizations</h2>
+            <hr>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="TempVisual.html">
+                            <img id="landing-viz" src="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Temp.png" alt="Latitude vs. Temperature">
+                        </a>
+                    </figure>
+                </div>
 
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="Humidity.html">
+                            <img id="landing-viz" src="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Humidity.png" alt="Latitude vs. Humidity">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="CloudsVisual.html">
+                            <img id="landing-viz" src="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Clouds.png" alt="Latitude vs. Cloudiness">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-6">
+                    <figure>
+                        <a href="WindVisual.html">
+                            <img id="landing-viz" src="C:\Users\Muntz\Desktop\Web-Design-Challenge\WebVisualizations\Resources\assets\images\Wind.png" alt="Latitude vs. Wind Speed">
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
